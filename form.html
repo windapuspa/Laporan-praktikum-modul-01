@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="author" content="Purnama Anaking">
+        <meta name="keyword" content="Belajar HTML, Belajar Web">
+        <meta name="description" content="Praktikum modul 2">
+        <meta name="robots" content="index, follow">
+        <title>Form Registrasi</title>
+        <style>
+            body {
+            font-family: "Times New Roman", Times, serif;
+            font-size: 14px;
+            }
+            fieldset {
+            width: 500px;
+            margin-bottom: 15px;
+            }
+            p {
+            margin: 5px 0;
+            }
+            label {
+            display: inline-block;
+            width: 180px;
+            }
+            .label-checkbox {
+            display: inline;
+            width: auto;
+            }
+            .label-top {
+            vertical-align: top;
+            }
+            .kemampuan-dasar input[type="checkbox"] {
+            vertical-align: middle;
+            }
+        </style>
+    </head>
+
+    <body>
+
+        <h2>Form Registrasi</h2>
+
+        <form action="" method="get">
+
+            <fieldset>
+            <legend>Biodata</legend>
+
+            <p>
+                <label for="nama">Nama Mahasiswa</label> :
+                <input type="text" name="nama" id="nama" placeholder="Nama Anda">
+            </p>
+
+            <p>
+                <label for="nim">No Induk Mahasiswa (NIM)</label> :
+                <input type="text" name="nim" id="nim" placeholder="123456789">
+            </p>
+
+            <p>
+                <label for="alamat" class="label-top">Alamat Mahasiswa</label>
+                <span class="label-top">:</span>
+                <textarea name="alamat" id="alamat" cols="30" rows="5" placeholder="Alamat Anda"></textarea>
+            </p>
+
+            <p>
+                <label class="label-top">Tanggal Lahir</label> :
+                <select name="tanggal">
+                <option value="1">01</option>
+                <option value="2">02</option>
+                <option value="3">03</option>
+                </select>
+                <select name="bulan">
+                <option value="1">Januari</option>
+                <option value="2">Februari</option>
+                <option value="3">Maret</option>
+                </select>
+                <select name="tahun">
+                <option value="1990">1990</option>
+                <option value="1991">1991</option>
+                <option value="1992">1992</option>
+                </select>
+            </p>
+
+            <p>
+                <label>Jenis Kelamin</label> :
+                <input type="radio" name="kelamin" value="pria" checked> Pria
+                <input type="radio" name="kelamin" value="wanita"> Wanita
+            </p>
+
+            <p>
+                <label for="foto">Upload Foto</label> :
+                <input type="file" name="foto" id="foto">
+            </p>
+
+            <p>
+                <label for="website">URL Website</label> :
+                <input type="url" name="website" id="website" placeholder="URL Website Anda" style="width:50%;">
+            </p>
+
+            <p>
+                <label for="pt">Perguruan Tinggi</label> :
+                <input type="text" name="pt" id="pt">
+            </p>
+
+            </fieldset>
+
+            <fieldset>
+            <legend>Info Akun</legend>
+
+            <p>
+                <label for="email">Email</label> :
+                <input type="email" name="email" id="email" placeholder="Email Anda">
+            </p>
+
+            <p>
+                <label for="username">Username</label> :
+                <input type="text" name="username" id="username" placeholder="Username Anda">
+            </p>
+
+            <p>
+                <label for="password">Password</label> :
+                <input type="password" name="password" id="password" placeholder="Password Anda">
+            </p>
+
+            <p>
+                <label for="ulangi_password">Ulangi Password</label> :
+                <input type="password" name="ulangi_password" id="ulangi_password" placeholder="Password Anda">
+            </p>
+
+            </fieldset>
+
+            <fieldset class="kemampuan-dasar">
+            <legend>Kemampuan Dasar</legend>
+
+            <input type="checkbox" name="html" id="html"><label for="html" class="label-checkbox">HTML</label>
+            <input type="checkbox" name="css" id="css"><label for="css" class="label-checkbox">CSS</label>
+            <input type="checkbox" name="javascript" id="javascript"><label for="javascript" class="label-checkbox">Javascript</label>
+            <input type="checkbox" name="php" id="php"><label for="php" class="label-checkbox">PHP</label>
+            <input type="checkbox" name="mysql" id="mysql"><label for="mysql" class="label-checkbox">MySQL</label>
+            <input type="checkbox" name="laravel" id="laravel"><label for="laravel" class="label-checkbox">Laravel</label>
+            <input type="checkbox" name="react" id="react"><label for="react" class="label-checkbox">React Native</label>
+
+            </fieldset>
+
+            <p>
+            <input type="reset" value="Reset">
+            <input type="submit" value="Simpan">
+            <input type="button" value="Button" onclick="">
+            </p>
+
+        </form>
+
+        </body>
+</html>
